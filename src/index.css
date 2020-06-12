@@ -17,10 +17,6 @@ ul {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-
 .title {
   align-content: center;
   padding-left: -3em;
@@ -57,4 +53,13 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.reset {
+  justify-self: center;
+  margin-top: 2em;
+  margin-left: 0.6em;
+  background-color: peru;
+  border-style: solid;
+  border-color: black;
 }

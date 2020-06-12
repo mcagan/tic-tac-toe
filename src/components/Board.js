@@ -20,6 +20,11 @@ export default function Board() {
     setXIsNext(!xIsNext);
   };
 
+  const resetGame = function () {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  };
+
   const calculateWinner = function (squares) {
     const lines = [
       [0, 1, 2],
@@ -69,6 +74,15 @@ export default function Board() {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
+      <button
+        className="reset"
+        onClick={(e) => {
+          e.preventDefault();
+          resetGame();
+        }}
+      >
+        New Game
+      </button>
     </div>
   );
 }
