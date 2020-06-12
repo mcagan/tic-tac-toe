@@ -1,6 +1,9 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: papayawhip;
 }
 
 ol,
@@ -18,8 +21,14 @@ ul {
   margin-bottom: 10px;
 }
 
+.title {
+  align-content: center;
+  padding-left: -3em;
+  margin-inline-start: -0.8em;
+}
+
 .square {
-  background: #fff;
+  background: orange;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
